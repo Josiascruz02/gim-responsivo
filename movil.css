@@ -1,0 +1,137 @@
+@media (max-width: 480px) {
+  .boxmenu {
+    display: flex;
+  }
+  header{
+    position: relative;
+  }
+  nav{
+    position: absolute;
+    display: none;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  nav ul {
+    width: 100%;
+    background-color: rgba(248, 64, 72, 0.9);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 30px;
+    border-radius: 15px;
+  }
+  nav ul li {
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-bottom: 2px dotted white;
+  }
+  nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+  }
+  .contenedor_info{
+    background-color: rgba(248, 64, 72, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    max-width: 400px;
+    color: white;
+    padding: 10px;
+  }
+  .contenedor_info h1{
+    font-size:45px;
+    color: white;
+    line-height: 1;
+  }
+  .contenedor_info p{
+    display: none;
+    color: black;
+  }
+  .contenedordesk{
+    max-width:280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px;
+    border: 2px #f5f5f5 solid;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.4s ease;
+  }
+  .servicios h2{
+    color: #F84048;
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    font-size:40px;
+  }
+  .contenedor_galery{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 30px 0;
+    width: 100%;
+    gap: 15px;
+  }
+  .contenedor_galerytext{
+    margin: 0;
+    max-width: 400px;
+    height: 350px;
+    gap: 25px;
+  }
+
+  .contenedor_galerygrid {
+    display: grid;
+    margin: 0%;
+    grid-gap:20px;
+    grid-template: repeat(1, auto) / repeat(1, auto);
+    grid-template-areas:"chicas" "gym" "mujer" "hombre";
+  }
+  footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+  }
+  footer p {
+    display: none
+  }
+  .flecha_arriba{
+    position: absolute;
+    z-index: 300;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #F84048;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flecha_arriba i{
+  color: white;
+  }
+
+
+}
